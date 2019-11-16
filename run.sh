@@ -15,7 +15,10 @@
 
 #!/bin/bash
 
+# 执行指令后，会先显示该指令及所下的参数。
 set -x
+
+# 若指令传回值不等于0，则立即退出shell。
 set -e
 
 ngx_upstream_file="/etc/nginx/nginx.conf"

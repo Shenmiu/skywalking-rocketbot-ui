@@ -10,4 +10,4 @@ RUN set -ex \
 
 EXPOSE 80
 
-CMD /usr/share/run.sh && nginx -g 'daemon off;' 
+ENTRYPOINT bash /usr/share/run.sh && nginx -g 'daemon off;' 
